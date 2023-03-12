@@ -1,0 +1,118 @@
+/* Add Bootstrap CSS to your project */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* Define custom styles for the login form component */
+form {
+  margin: auto;
+  max-width: 500px;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+form.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  height: 50px;
+  font-size: 16px;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+label {
+  font-weight: bold;
+}
+
+.invalid-feedback {
+  color: #dc3545;
+}
+
+.btn {
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 0 30px;
+  background-color: #3897f0;
+  border-color: #3897f0;
+}
+
+.btn:hover {
+  background-color: #2680c2;
+  border-color: #2680c2;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #3897f0;
+  border-color: #3897f0;
+}
+
+.btn-primary:hover {
+  background-color: #2680c2;
+  border-color: #2680c2;
+}
+
+.text-primary {
+  color: #3897f0;
+}
+
+.text-primary:hover {
+  text-decoration: underline;
+}
+
+/* Center the login form horizontally and vertically */
+.login-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+}
+
+/* Add a background image to the login form */
+.login-form:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("https://source.unsplash.com/1600x900/?nature,landscape");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+/* Add a shadow to the login form */
+.login-form {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
